@@ -113,7 +113,7 @@ export function Header() {
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" className={cn(
                         "flex items-center gap-1 hover:bg-primary/10 data-[state=open]:bg-primary/10",
-                        pathname.startsWith('/' + link.label.toLowerCase().split('-')[0]) && 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground'
+                        link.sublinks.some(sublink => pathname.startsWith(sublink.href)) && 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground'
                         )}>
                       {link.label}
                       <ChevronDown className="h-4 w-4"/>
