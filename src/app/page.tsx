@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, GraduationCap, FlaskConical } from "lucide-react";
+import { BookOpen, GraduationCap, FlaskConical, ArrowRight } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ChatBot } from "@/components/chat-bot";
+import Link from "next/link";
 
 const academicPrograms = [
   {
@@ -48,14 +49,6 @@ const newsItems = [
   },
 ];
 
-const galleryImages = [
-  { src: "https://placehold.co/600x400.png", alt: "Students in a classroom", hint: "students classroom" },
-  { src: "https://placehold.co/600x400.png", alt: "School campus", hint: "school campus" },
-  { src: "https://placehold.co/600x400.png", alt: "Students playing sports", hint: "kids sports" },
-  { src: "https://placehold.co/600x400.png", alt: "Science lab", hint: "science lab" },
-  { src: "https://placehold.co/600x400.png", alt: "School library", hint: "school library" },
-  { src: "https://placehold.co/600x400.png", alt: "Art class", hint: "art class" },
-];
 
 export default function Home() {
   return (
@@ -81,23 +74,29 @@ export default function Home() {
               A community dedicated to fostering intellectual curiosity, critical thinking, and a passion for lifelong learning.
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">Enroll Now</Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">Learn More</Button>
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                <Link href="/admissions">Enroll Now</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
+                <Link href="/about">Learn More</Link>
+              </Button>
             </div>
           </div>
         </section>
 
-        {/* About Section */}
+        {/* About Preview Section */}
         <section id="about" className="py-16 md:py-24 bg-card">
           <div className="container max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">Discover NDPS</h2>
+              <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">A Legacy of Excellence</h2>
               <p className="mb-4 text-muted-foreground">
                 Founded on the principles of academic excellence and holistic development, New Delhi Public School has been a beacon of quality education for over two decades. Our mission is to empower students to achieve their full potential and become responsible global citizens.
               </p>
-              <p className="text-muted-foreground">
-                We believe in a balanced approach to education, combining rigorous academic programs with a rich tapestry of extracurricular activities. Our values of integrity, respect, and resilience are woven into every aspect of school life.
-              </p>
+               <Button asChild variant="link" className="px-0 text-primary hover:text-accent">
+                 <Link href="/about">
+                   Discover Our Story <ArrowRight className="ml-2 h-4 w-4" />
+                 </Link>
+               </Button>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden shadow-xl">
                <Image
@@ -111,7 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Academics Section */}
+        {/* Academics Preview Section */}
         <section id="academics" className="py-16 md:py-24">
           <div className="container max-w-6xl mx-auto text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2">Academic Programs</h2>
@@ -133,35 +132,16 @@ export default function Home() {
                 </Card>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* Gallery Section */}
-        <section id="gallery" className="py-16 md:py-24 bg-card">
-          <div className="container max-w-6xl mx-auto text-center">
-             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2">Campus Life</h2>
-             <p className="max-w-2xl mx-auto text-muted-foreground mb-12">
-               A glimpse into the vibrant and enriching environment at NDPS.
-             </p>
-             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {galleryImages.map((image, index) => (
-                <div key={index} className="relative aspect-square rounded-lg overflow-hidden shadow-lg group">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    data-ai-hint={image.hint}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
-                </div>
-              ))}
-             </div>
+             <Button asChild className="mt-12">
+               <Link href="/academics">
+                 Explore All Programs <ArrowRight className="ml-2 h-4 w-4" />
+               </Link>
+             </Button>
           </div>
         </section>
         
-        {/* News & Events Section */}
-        <section id="news" className="py-16 md:py-24">
+        {/* News Preview Section */}
+        <section id="news" className="py-16 md:py-24 bg-card">
           <div className="container max-w-6xl mx-auto">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary text-center mb-12">Latest News & Events</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -183,6 +163,13 @@ export default function Home() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+             <div className="text-center mt-12">
+                <Button asChild>
+                    <Link href="/news">
+                        View All News <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                </Button>
             </div>
           </div>
         </section>
