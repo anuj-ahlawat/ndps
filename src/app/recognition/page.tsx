@@ -39,7 +39,7 @@ export default function RecognitionPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    New Delhi Public School is proudly affiliated with the Central Board of Secondary Education (CBSE), which is a national level board of education in India for public and private schools, controlled and managed by the Government of India.
+                    Sri Ram International School is proudly affiliated with the Central Board of Secondary Education (CBSE), which is a national level board of education in India for public and private schools, controlled and managed by the Government of India.
                   </p>
                   <div className="space-y-2">
                     <p className="font-semibold">Affiliation No: <span className="font-mono text-accent">2730594</span></p>

@@ -57,7 +57,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
-          <div className="absolute inset-0 bg-primary/80 z-10" />
+          <div className="absolute inset-0 bg-black/50 z-10" />
           <Image
             src="https://placehold.co/1920x1080.png"
             alt="Sri Ram International School Campus"

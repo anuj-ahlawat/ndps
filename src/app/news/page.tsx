@@ -12,13 +12,13 @@ const newsItems = [
     category: "Academics",
     title: "Annual Science Fair Winners Announced",
     date: "October 26, 2023",
-    excerpt: "The brightest young minds of NDPS showcased their innovative projects at the Annual Science Fair. The event was a massive success, with projects ranging from renewable energy solutions to AI-powered robots..."
+    excerpt: "The brightest young minds of SRIS showcased their innovative projects at the Annual Science Fair. The event was a massive success, with projects ranging from renewable energy solutions to AI-powered robots..."
   },
   {
     image: "https://placehold.co/600x400.png",
     hint: "sports day",
     category: "Sports",
-    title: "NDPS Dominates at Inter-School Athletics Meet",
+    title: "SRIS Dominates at Inter-School Athletics Meet",
     date: "October 22, 2023",
     excerpt: "Our school's athletes brought home a haul of medals from the Inter-School Athletics Meet, showcasing exceptional talent and sportsmanship. The school secured the overall championship trophy..."
   },
@@ -42,9 +42,9 @@ const newsItems = [
     image: "https://placehold.co/600x400.png",
     hint: "community service",
     category: "Community",
-    title: "NDPS organizes successful Plantation Drive",
+    title: "SRIS organizes successful Plantation Drive",
     date: "October 10, 2023",
-    excerpt: "As part of our commitment to environmental stewardship, NDPS organized a large-scale plantation drive in the local community. Over 1000 saplings were planted by students and staff..."
+    excerpt: "As part of our commitment to environmental stewardship, SRIS organized a large-scale plantation drive in the local community. Over 1000 saplings were planted by students and staff..."
   },
    {
     image: "https://placehold.co/600x400.png",
@@ -65,7 +65,7 @@ export default function NewsPage() {
           <div className="container max-w-4xl mx-auto text-center">
             <h1 className="font-headline text-4xl md:text-6xl font-bold">News & Events</h1>
             <p className="mt-4 text-lg md:text-xl text-primary-foreground/80">
-              Stay updated with the latest happenings at New Delhi Public School.
+              Stay updated with the latest happenings at Sri Ram International School.
             </p>
           </div>
         </section>
