@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: 'NDPS Hub - New Delhi Public School',
-  description: 'Welcome to New Delhi Public School. Discover our history, academic programs, campus life, and more.',
+  title: 'Sri Ram International School - Najafgarh',
+  description: 'Welcome to Sri Ram International School, Najafgarh. Discover our history, academic programs, campus life, and more.',
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=PT+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased")}>
         {children}

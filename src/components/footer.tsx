@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react";
 import { SchoolLogo } from "@/components/icons";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -30,29 +30,28 @@ export function Footer() {
               <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link href="/academics" className="hover:text-accent transition-colors">Academics</Link></li>
               <li><Link href="/admissions" className="hover:text-accent transition-colors">Admissions</Link></li>
-              <li><Link href="/gallery" className="hover:text-accent transition-colors">Gallery</Link></li>
+              <li><Link href="/rules" className="hover:text-accent transition-colors">Rules</Link></li>
               <li><Link href="/contact" className="hover:text-accent transition-colors">Contact</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-headline text-lg font-semibold mb-4">Get in Touch</h3>
             <address className="space-y-2 text-sm text-primary-foreground/80 not-italic">
-              <p>123 Education Lane, New Delhi, India 110001</p>
-              <p><a href="mailto:contact@ndps.edu.in" className="hover:text-accent transition-colors">contact@ndps.edu.in</a></p>
-              <p><a href="tel:+911123456789" className="hover:text-accent transition-colors">+91 11 2345 6789</a></p>
+              <p className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-1 shrink-0"/><span>Prem Nursery Gopal Nagar Najafgarh, New Delhi-110043</span></p>
+              <p className="flex items-center gap-2"><Mail className="h-4 w-4 shrink-0"/><a href="mailto:srisnajafgarh@gmail.com" className="hover:text-accent transition-colors">srisnajafgarh@gmail.com</a></p>
+              <p className="flex items-center gap-2"><Phone className="h-4 w-4 shrink-0"/><a href="tel:+919999040338" className="hover:text-accent transition-colors">(+91) 99990 40338</a></p>
             </address>
           </div>
           <div>
-             <h3 className="font-headline text-lg font-semibold mb-4">Our Newsletter</h3>
-             <p className="text-sm text-primary-foreground/80 mb-2">Subscribe to get our latest updates.</p>
-             <form className="flex gap-2">
-                <Input type="email" placeholder="Your email" className="bg-primary-foreground/10 border-primary-foreground/20 text-sm placeholder:text-primary-foreground/50 focus:ring-accent focus:border-accent" aria-label="Email for newsletter"/>
-                <Button type="submit" variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90">Subscribe</Button>
-             </form>
+             <h3 className="font-headline text-lg font-semibold mb-4">Affiliation</h3>
+             <div className="text-sm text-primary-foreground/80 space-y-1">
+                <p><strong>Affiliation No:</strong> 2730594</p>
+                <p><strong>School Code:</strong> 25349</p>
+             </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} New Delhi Public School. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sri Ram International School. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

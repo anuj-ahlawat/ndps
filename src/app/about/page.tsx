@@ -2,12 +2,19 @@ import Image from "next/image";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Card } from "@/components/ui/card";
+import { Users, User, Ratio } from "lucide-react";
 
 const teamMembers = [
   { name: 'Dr. Evelyn Reed', role: 'Principal', image: 'https://placehold.co/400x400.png', hint: 'woman portrait' },
   { name: 'Mr. Samuel Chen', role: 'Vice Principal', image: 'https://placehold.co/400x400.png', hint: 'man portrait' },
   { name: 'Ms. Aisha Khan', role: 'Head of Academics', image: 'https://placehold.co/400x400.png', hint: 'woman portrait professional' },
 ];
+
+const stats = [
+  { value: '1200+', label: 'Students Enrolled', icon: <Users className="h-8 w-8 text-primary" /> },
+  { value: '75+', label: 'Dedicated Teachers', icon: <User className="h-8 w-8 text-primary" /> },
+  { value: '16:1', label: 'Student-Teacher Ratio', icon: <Ratio className="h-8 w-8 text-primary" /> },
+]
 
 export default function AboutPage() {
   return (
@@ -48,6 +55,20 @@ export default function AboutPage() {
 
         <section className="py-16 md:py-24">
           <div className="container max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              {stats.map((stat) => (
+                <Card key={stat.label} className="p-6 shadow-lg">
+                  <div className="flex justify-center mb-4">{stat.icon}</div>
+                  <p className="text-3xl font-bold text-primary">{stat.value}</p>
+                  <p className="text-muted-foreground mt-1">{stat.label}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 md:py-24 bg-card">
+          <div className="container max-w-5xl mx-auto">
             <div className="text-center">
               <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">Our Philosophy</h2>
               <p className="max-w-3xl mx-auto text-muted-foreground">
@@ -57,7 +78,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-card">
+        <section className="py-16 md:py-24">
           <div className="container max-w-6xl mx-auto text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-12">Meet Our Leadership</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
