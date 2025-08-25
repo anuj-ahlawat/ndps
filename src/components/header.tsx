@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, ChevronDown, Phone, Mail, MapPin } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -164,7 +164,7 @@ export function Header() {
                         </Button>
                       </SheetClose>
                   </div>
-                  <nav className="flex flex-col gap-1 p-4">
+                  <nav className="flex-1 overflow-y-auto p-4">
                     <Accordion type="single" collapsible className="w-full">
                     {navLinks.map((link, index) => (
                        link.sublinks ? (

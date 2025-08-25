@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react";
 import { SchoolLogo } from "@/components/icons";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 
 export function Footer() {
   return (
