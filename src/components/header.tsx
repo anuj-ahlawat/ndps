@@ -54,7 +54,17 @@ const navLinks = [
       { href: "/fees", label: "Fee Structure" },
     ]
   },
-  { href: "/facilities", label: "Facilities" },
+  {
+    label: "Facilities",
+    sublinks: [
+      { href: "/facilities/smart-classes", label: "Smart Classes" },
+      { href: "/facilities/laboratories", label: "Laboratories" },
+      { href: "/facilities/library", label: "Library" },
+      { href: "/facilities/computer-lab", label: "Computer Lab" },
+      { href: "/facilities/transport", label: "Transport" },
+      { href: "/facilities/excursions", label: "Excursions" },
+    ]
+  },
   { href: "/gallery", label: "Gallery" },
   { href: "/news", label: "News & Events" },
   { href: "/contact", label: "Contact-Us" },
