@@ -37,14 +37,23 @@ const navLinks = [
     ]
   },
   {
+    label: "Academics",
+    sublinks: [
+      { href: "/examination", label: "Examination" },
+      { href: "/annual-calendar", label: "Annual Academic Calendar" },
+      { href: "/results", label: "Class 10th & 12th CBSE Result" },
+      { href: "/life-skills", label: "Life Skills" },
+      { href: "/faculty", label: "Faculty" },
+      { href: "/co-scholastic-activities", label: "Co-Scholastic Activities" },
+    ]
+  },
+  {
     label: "Admission",
     sublinks: [
       { href: "/admissions", label: "Admission Process" },
       { href: "/fees", label: "Fee Structure" },
     ]
   },
-  { href: "/academics", label: "Academics" },
-  { href: "/faculty", label: "Faculty" },
   { href: "/facilities", label: "Facilities" },
   { href: "/gallery", label: "Gallery" },
   { href: "/news", label: "News & Events" },

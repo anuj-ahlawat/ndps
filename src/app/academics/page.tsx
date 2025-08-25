@@ -1,8 +1,10 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, GraduationCap, FlaskConical, Microscope, Paintbrush, Music } from "lucide-react";
+import { BookOpen, GraduationCap, FlaskConical, Microscope, Paintbrush, Music, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const programs = [
   {
@@ -22,11 +24,12 @@ const programs = [
   },
 ];
 
-const departments = [
-  { name: 'Science & Technology', icon: <Microscope className="h-8 w-8 text-primary" /> },
-  { name: 'Humanities & Social Sciences', icon: <BookOpen className="h-8 w-8 text-primary" /> },
-  { name: 'Fine Arts', icon: <Paintbrush className="h-8 w-8 text-primary" /> },
-  { name: 'Performing Arts', icon: <Music className="h-8 w-8 text-primary" /> },
+const academicLinks = [
+    { href: "/examination", label: "Examination" },
+    { href: "/annual-calendar", label: "Annual Academic Calendar" },
+    { href: "/results", label: "Results" },
+    { href: "/life-skills", label: "Life Skills" },
+    { href: "/co-scholastic-activities", label: "Co-Scholastic Activities" },
 ];
 
 export default function AcademicsPage() {
@@ -81,16 +84,18 @@ export default function AcademicsPage() {
                />
             </div>
             <div>
-              <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">Departments</h2>
+              <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">Academic Resources</h2>
               <p className="mb-6 text-muted-foreground">
-                Our academic departments are home to dedicated and passionate educators who are experts in their fields.
+                Explore various aspects of our academic framework.
               </p>
               <div className="space-y-4">
-                {departments.map((dept) => (
-                  <div key={dept.name} className="flex items-center gap-4 p-4 rounded-lg bg-background">
-                    {dept.icon}
-                    <span className="font-semibold text-lg">{dept.name}</span>
-                  </div>
+                {academicLinks.map((link) => (
+                  <Button key={link.href} asChild variant="outline" className="w-full justify-between p-6 text-lg">
+                    <Link href={link.href}>
+                      {link.label}
+                      <ArrowRight className="h-5 w-5" />
+                    </Link>
+                  </Button>
                 ))}
               </div>
             </div>
