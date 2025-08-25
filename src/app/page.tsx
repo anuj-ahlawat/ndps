@@ -37,7 +37,7 @@ const newsItems = [
     image: "https://placehold.co/600x400.png",
     hint: "sports day",
     category: "Sports",
-    title: "SRIS Dominates at Inter-School Athletics Meet",
+    title: "NDPS Dominates at Inter-School Athletics Meet",
     date: "October 22, 2023",
   },
   {
@@ -60,7 +60,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50 z-10" />
           <Image
             src="https://placehold.co/1920x1080.png"
-            alt="Sri Ram International School Campus"
+            alt="New Delhi Public School Campus"
             data-ai-hint="school building"
             fill
             className="object-cover"
@@ -68,7 +68,7 @@ export default function Home() {
           />
           <div className="relative z-20 container max-w-4xl px-4">
             <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-lg">
-              Welcome to Sri Ram International School
+              Welcome to New Delhi Public School
             </h1>
             <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">
               A community dedicated to fostering intellectual curiosity, critical thinking, and a passion for lifelong learning.
@@ -90,7 +90,7 @@ export default function Home() {
             <div>
               <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">A Legacy of Excellence</h2>
               <p className="mb-4 text-muted-foreground">
-                Founded on the principles of academic excellence and holistic development, Sri Ram International School has been a beacon of quality education for over two decades. Our mission is to empower students to achieve their full potential and become responsible global citizens.
+                Founded on the principles of academic excellence and holistic development, New Delhi Public School has been a beacon of quality education for over two decades. Our mission is to empower students to achieve their full potential and become responsible global citizens.
               </p>
                <Button asChild variant="link" className="px-0 text-primary hover:text-accent">
                  <Link href="/about">

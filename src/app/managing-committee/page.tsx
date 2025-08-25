@@ -23,7 +23,7 @@ export default function ManagingCommitteePage() {
           <div className="container max-w-4xl mx-auto text-center">
             <h1 className="font-headline text-4xl md:text-6xl font-bold">Managing Committee</h1>
             <p className="mt-4 text-lg md:text-xl text-primary-foreground/80">
-              Guiding the vision and future of Sri Ram International School.
+              Guiding the vision and future of New Delhi Public School.
             </p>
           </div>
         </section>
@@ -33,7 +33,7 @@ export default function ManagingCommitteePage() {
              <div className="text-center max-w-3xl mx-auto mb-12">
                 <h2 className="font-headline text-3xl font-bold text-primary mb-4">Our Esteemed Members</h2>
                 <p className="text-muted-foreground">
-                    The Managing Committee of Sri Ram International School comprises experienced educationists, administrators, and community leaders dedicated to upholding the school's mission and ensuring its continuous growth and excellence. The committee provides strategic direction, oversees financial management, and ensures that the school adheres to the highest standards of educational quality and ethical conduct.
+                    The Managing Committee of New Delhi Public School comprises experienced educationists, administrators, and community leaders dedicated to upholding the school's mission and ensuring its continuous growth and excellence. The committee provides strategic direction, oversees financial management, and ensures that the school adheres to the highest standards of educational quality and ethical conduct.
                 </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

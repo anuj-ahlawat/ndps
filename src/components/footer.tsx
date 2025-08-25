@@ -12,7 +12,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2">
               <SchoolLogo className="h-8 w-8 text-accent" />
-              <span className="font-headline text-xl font-bold">Sri Ram International School</span>
+              <span className="font-headline text-xl font-bold">New Delhi Public School</span>
             </Link>
             <p className="text-sm text-slate-300">
               Fostering excellence, integrity, and lifelong learning since 1995.
@@ -51,7 +51,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-slate-600 text-center text-sm text-slate-400">
-          <p>&copy; {new Date().getFullYear()} Sri Ram International School. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} New Delhi Public School. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

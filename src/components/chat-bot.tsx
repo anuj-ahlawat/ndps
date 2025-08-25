@@ -19,7 +19,7 @@ export function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hello! I'm the SRIS virtual assistant. How can I help you today?",
+      content: "Hello! I'm the NDPS virtual assistant. How can I help you today?",
     },
   ]);
   const [inputValue, setInputValue] = useState("");
@@ -69,7 +69,7 @@ export function ChatBot() {
           <header className="flex items-center justify-between p-4 border-b bg-primary text-primary-foreground rounded-t-lg">
             <div className="flex items-center gap-2">
               <Bot className="h-6 w-6" />
-              <h3 className="font-headline text-lg">SRIS Assistant</h3>
+              <h3 className="font-headline text-lg">NDPS Assistant</h3>
             </div>
             <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/20" onClick={() => setIsOpen(false)}>
                 <X className="h-5 w-5" />
@@ -128,10 +128,10 @@ export function ChatBot() {
               <Input
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Ask about SRIS..."
+                placeholder="Ask about NDPS..."
                 className="flex-1"
                 disabled={isPending}
-                aria-label="Your question about SRIS"
+                aria-label="Your question about NDPS"
               />
               <Button type="submit" size="icon" disabled={isPending}>
                 <Send className="h-5 w-5" />

@@ -46,7 +46,7 @@ export default function LifeSkillsPage() {
              <div className="text-center">
               <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">Our Approach to Holistic Development</h2>
               <p className="max-w-3xl mx-auto text-muted-foreground mb-12">
-                At SRIS, we believe that education extends beyond textbooks. Our Life Skills program is integrated into the curriculum to equip students with the necessary social, emotional, and thinking skills to navigate the challenges of the modern world successfully and responsibly.
+                At NDPS, we believe that education extends beyond textbooks. Our Life Skills program is integrated into the curriculum to equip students with the necessary social, emotional, and thinking skills to navigate the challenges of the modern world successfully and responsibly.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -81,7 +81,7 @@ export function Header() {
         <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <SchoolLogo className="h-8 w-8 text-white" />
-            <span className="font-bold hidden sm:inline-block">SRIS</span>
+            <span className="font-bold hidden sm:inline-block">NDPS</span>
           </Link>
           <nav className="hidden md:flex items-center gap-1 text-sm font-medium">
             {navLinks.map((link) => (
@@ -128,7 +128,7 @@ export function Header() {
                   <div className="flex items-center justify-between p-4 border-b border-b-primary-foreground/20">
                      <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
                         <SchoolLogo className="h-8 w-8" />
-                        <span className="font-headline text-xl font-bold">Sri Ram Int. School</span>
+                        <span className="font-headline text-xl font-bold">New Delhi Public School</span>
                       </Link>
                       <SheetClose asChild>
                         <Button variant="ghost" size="icon">

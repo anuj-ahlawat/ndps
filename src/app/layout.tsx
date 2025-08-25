@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: 'Sri Ram International School - Najafgarh',
-  description: 'Welcome to Sri Ram International School, Najafgarh. Discover our history, academic programs, campus life, and more.',
+  title: 'New Delhi Public School - Najafgarh',
+  description: 'Welcome to New Delhi Public School, Najafgarh. Discover our history, academic programs, campus life, and more.',
 };
 
 export default function RootLayout({

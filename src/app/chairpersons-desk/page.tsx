@@ -32,10 +32,10 @@ export default function ChairpersonsDeskPage() {
             </div>
             <div className="md:col-span-2 space-y-6 text-muted-foreground">
                 <p className="text-lg">
-                    It is with immense pride and pleasure that I welcome you to Sri Ram International School. Our journey began with a simple yet profound vision: to create a centre for learning where young minds are nurtured, challenged, and inspired to reach their fullest potential.
+                    It is with immense pride and pleasure that I welcome you to New Delhi Public School. Our journey began with a simple yet profound vision: to create a centre for learning where young minds are nurtured, challenged, and inspired to reach their fullest potential.
                 </p>
                 <p>
-                    In today's rapidly changing world, education is not just about imparting knowledge but about equipping our children with the skills, values, and mindset to thrive as global citizens. At SRIS, we are committed to providing a holistic education that balances academic rigor with co-curricular excellence. We believe in fostering an environment where creativity, critical thinking, and a passion for lifelong learning are celebrated.
+                    In today's rapidly changing world, education is not just about imparting knowledge but about equipping our children with the skills, values, and mindset to thrive as global citizens. At NDPS, we are committed to providing a holistic education that balances academic rigor with co-curricular excellence. We believe in fostering an environment where creativity, critical thinking, and a passion for lifelong learning are celebrated.
                 </p>
                 <p>
                     Our dedicated team of educators is the cornerstone of our institution. They are not just teachers but mentors who guide our students on their path of discovery. We continuously invest in their professional development to ensure that our teaching methodologies remain innovative and effective.

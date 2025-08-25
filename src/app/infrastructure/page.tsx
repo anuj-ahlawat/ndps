@@ -41,7 +41,7 @@ export default function InfrastructurePage() {
             <div>
               <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">Our Campus</h2>
               <p className="mb-6 text-muted-foreground">
-                Sri Ram International School boasts a sprawling, eco-friendly campus designed to provide a conducive environment for learning and growth. Our infrastructure is meticulously planned to support a wide range of academic and co-curricular activities, ensuring that students have access to the best facilities.
+                New Delhi Public School boasts a sprawling, eco-friendly campus designed to provide a conducive environment for learning and growth. Our infrastructure is meticulously planned to support a wide range of academic and co-curricular activities, ensuring that students have access to the best facilities.
               </p>
               <Card>
                 <CardHeader>

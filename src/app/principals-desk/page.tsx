@@ -32,7 +32,7 @@ export default function PrincipalsDeskPage() {
             </div>
             <div className="md:col-span-2 space-y-6 text-muted-foreground">
                 <p className="text-lg">
-                    Welcome to Sri Ram International School! As the Principal, I am honored to lead this vibrant community of learners, educators, and parents. Our school is a place where every child is valued, and their unique talents are nurtured in a supportive and stimulating environment.
+                    Welcome to New Delhi Public School! As the Principal, I am honored to lead this vibrant community of learners, educators, and parents. Our school is a place where every child is valued, and their unique talents are nurtured in a supportive and stimulating environment.
                 </p>
                 <p>
                     Our academic philosophy is centered on student-centric learning. We strive to make education a joyful and engaging experience, where students are active participants in their own learning journey. We employ a blend of traditional and modern teaching techniques, including project-based learning, inquiry-based instruction, and technology integration, to cater to diverse learning styles.
@@ -44,7 +44,7 @@ export default function PrincipalsDeskPage() {
                     The safety and well-being of our students are our utmost priorities. We have a robust framework in place to ensure a secure and welcoming campus for everyone. Our dedicated team of counselors and support staff are always available to assist students with their academic and personal challenges.
                 </p>
                 <p>
-                    I am incredibly proud of our students' achievements, both in and out of the classroom, and the unwavering commitment of our staff. I invite you to explore our website to learn more about our programs and the wonderful opportunities available at SRIS.
+                    I am incredibly proud of our students' achievements, both in and out of the classroom, and the unwavering commitment of our staff. I invite you to explore our website to learn more about our programs and the wonderful opportunities available at NDPS.
                 </p>
                 <p>
                     We look forward to partnering with you in your child's educational journey.
