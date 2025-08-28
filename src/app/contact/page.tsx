@@ -66,7 +66,7 @@ export default function ContactPage() {
                 <h2 className="font-headline text-3xl font-bold text-primary mb-6 text-center">Find Us on the Map</h2>
                 <div className="aspect-video rounded-lg overflow-hidden shadow-xl border">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.260027582207!2d77.2167210150821!3d28.62194698242137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4a044b7b2b%3A0x6b7297693b12a02!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1678886561138!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.7144421994026!2d77.9347603!3d26.5935372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976ab314e613df3%3A0x1e172b746d8e4d71!2sNew%20Delhi%20Public%20School!5e0!3m2!1sen!2sin!4v1756379103162!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

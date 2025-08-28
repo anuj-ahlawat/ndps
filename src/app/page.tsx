@@ -77,7 +77,7 @@ export default function Home() {
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                 <Link href="/admissions">Enroll Now</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
+              <Button asChild size="lg" variant="outline" className="text-black border-white hover:bg-white hover:text-primary">
                 <Link href="/about">Learn More</Link>
               </Button>
             </div>

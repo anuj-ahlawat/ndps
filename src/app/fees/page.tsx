@@ -89,19 +89,8 @@ export default function FeesPage() {
                     </ul>
                  </div>
              </div>
-
-             <Card className="mt-12 bg-secondary">
-                 <CardHeader>
-                     <CardTitle>Payment Information</CardTitle>
-                 </CardHeader>
-                 <CardContent className="space-y-2">
-                     <p>Fees can be paid quarterly. The due dates for each quarter are: April 15th, July 15th, October 15th, and January 15th.</p>
-                     <p>We accept payments via online portal, bank transfer, and at the school's accounts office.</p>
-                 </CardContent>
-                 <CardFooter>
-                     <Button>Pay Fees Online</Button>
-                 </CardFooter>
-             </Card>
+                        
+             
           </div>
         </section>
       </main>

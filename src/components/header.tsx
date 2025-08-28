@@ -73,33 +73,34 @@ const navLinks = [
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background shadow-md">
-      <div className="bg-primary text-primary-foreground py-4">
+    <header className="w-full bg-background shadow-md">
+      <div className="bg-primary text-primary-foreground py-6">
           <div className="container max-w-screen-2xl flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                  <SchoolLogo className="h-16 w-16 text-white" />
+                  <SchoolLogo className="h-20 w-20 text-white" />
                   <div>
-                      <h1 className="text-2xl md:text-3xl font-bold font-headline text-white">New Delhi Public School</h1>
-                      <p className="text-sm text-primary-foreground/80">Prem Nursery Gopal Nagar Najafgarh, New Delhi-110043</p>
+                      <h1 className="text-3xl md:text-4xl font-bold font-headline text-white">New Delhi Public School</h1>
+                      <p className="text-sm md:text-base text-primary-foreground/80">Jarah Road, Bandha, Morena, Po Hetampur, Madhya Pradesh, Morena, Madhya Pradesh 476001</p>
                   </div>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-sm">
                   <div className="flex flex-col items-start sm:items-end gap-2">
-                    <a href="tel:+919999040338" className="flex items-center gap-2 hover:text-accent transition-colors">
+                    <a href="tel:+99979879688" className="flex items-center gap-2 hover:text-accent transition-colors">
                       <Phone className="h-4 w-4" />
-                      <span>(+91) 99990 40338</span>
+                      <span>(+91) 9997987968</span>
                     </a>
-                     <a href="mailto:srisnajafgarh@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                     <a href="mailto:ndpsmorena@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
                       <Mail className="h-4 w-4" />
-                      <span>srisnajafgarh@gmail.com</span>
+                      <span>ndpsmorena@gmail.com</span>
                     </a>
                   </div>
                   <div className="text-xs bg-primary-foreground/10 p-2 rounded-md">
-                    <p><strong>Affiliation No:</strong> 2730594</p>
-                    <p><strong>School Code:</strong> 25349</p>
+                    <p><strong>Affiliation No:</strong> 132310001</p>
+                    <p><strong>School Code:</strong> 132310001</p>
                   </div>
               </div>
           </div>
@@ -109,17 +110,17 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-1 text-sm font-medium">
             {navLinks.map((link) => (
               link.sublinks ? (
-                <DropdownMenu key={link.label}>
+                <DropdownMenu key={link.label} open={openMenu === link.label} onOpenChange={(isOpen) => setOpenMenu(isOpen ? link.label : null)}>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className={cn(
-                        "flex items-center gap-1 hover:bg-primary/10 data-[state=open]:bg-primary/10",
+                    <Button variant="ghost" onMouseEnter={() => setOpenMenu(link.label)} className={cn(
+                        "flex items-center gap-1 hover:bg-primary/10 data-[state=open]:bg-primary/10 px-4",
                         link.sublinks.some(sublink => pathname.startsWith(sublink.href)) && 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground'
                         )}>
                       {link.label}
                       <ChevronDown className="h-4 w-4"/>
                     </Button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent>
+                  <DropdownMenuContent onMouseLeave={() => setOpenMenu(null)}>
                     {link.sublinks.map((sublink) => (
                       <DropdownMenuItem key={sublink.href} asChild>
                         <Link href={sublink.href}>{sublink.label}</Link>
@@ -129,7 +130,7 @@ export function Header() {
                 </DropdownMenu>
               ) : (
                 <Button asChild variant="ghost" className={cn(
-                    "hover:bg-primary/10",
+                    "hover:bg-primary/10 px-4",
                      pathname === link.href ? 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground' : ''
                      )}>
                     <Link
