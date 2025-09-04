@@ -1,7 +1,6 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import {
   Table,
@@ -71,7 +70,7 @@ export default function FeesPage() {
 
              <div className="mt-12 grid md:grid-cols-2 gap-8">
                  <div>
-                    <h3 className="font-headline text-2xl font-bold text-primary mb-4">What's Included</h3>
+                    <h3 className="font-headline text-2xl font-bold text-primary mb-4">What&apos;s Included</h3>
                     <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-center gap-2"><CheckCircle className="h-5 w-5 text-green-500" /> Academic tuition</li>
                         <li className="flex items-center gap-2"><CheckCircle className="h-5 w-5 text-green-500" /> Library and lab fees</li>

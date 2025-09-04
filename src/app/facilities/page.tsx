@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FlaskConical, Book, Computer, Microscope, Palette, Music, Dumbbell } from "lucide-react";
+
+import { Book, Computer, Microscope, Palette, Dumbbell } from "lucide-react";
 import Image from "next/image";
 
 const facilities = [

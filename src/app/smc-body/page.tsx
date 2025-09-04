@@ -69,7 +69,7 @@ export default function SmcBodyPage() {
              </Card>
              <div className="mt-8 text-muted-foreground space-y-4">
                  <h2 className="font-headline text-2xl font-bold text-primary">Role of the SMC</h2>
-                 <p>The School Management Committee (SMC) plays a crucial role in the governance and development of the school. It is constituted as per the guidelines of the CBSE and the Directorate of Education. The SMC works collaboratively with the school leadership to monitor and support the school's functioning, ensuring transparency, accountability, and the overall well-being of the school community.</p>
+                 <p>The School Management Committee (SMC) plays a crucial role in the governance and development of the school. It is constituted as per the guidelines of the CBSE and the Directorate of Education. The SMC works collaboratively with the school leadership to monitor and support the school&apos;s functioning, ensuring transparency, accountability, and the overall well-being of the school community.</p>
                  <p>Key responsibilities include overseeing the utilization of grants, monitoring academic and co-curricular activities, and ensuring the implementation of governmental policies. The committee serves as a vital link between the school, parents, and the community, fostering a spirit of partnership for the betterment of education.</p>
              </div>
           </div>

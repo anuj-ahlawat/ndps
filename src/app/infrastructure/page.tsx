@@ -94,7 +94,7 @@ export default function InfrastructurePage() {
                      </Card>
                       <Card className="p-6 text-center">
                          <h3 className="font-headline text-xl font-bold text-primary mb-2">Health & Wellness Room</h3>
-                         <p className="text-muted-foreground">A well-equipped infirmary with a qualified nurse to attend to students' medical needs.</p>
+                         <p className="text-muted-foreground">A well-equipped infirmary with a qualified nurse to attend to students&apos; medical needs.</p>
                      </Card>
                  </div>
             </div>

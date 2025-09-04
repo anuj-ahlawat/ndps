@@ -1,7 +1,6 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -17,6 +16,15 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  webpack: (config, { isServer }) => {
+    // Suppress handlebars warnings
+    config.ignoreWarnings = [
+      { module: /node_modules\/handlebars/ },
+      { message: /require\.extensions is not supported by webpack/ },
+    ];
+    
+    return config;
   },
 };
 

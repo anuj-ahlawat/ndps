@@ -1,6 +1,5 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -15,7 +14,7 @@ export default function ContactPage() {
           <div className="container max-w-4xl mx-auto text-center">
             <h1 className="font-headline text-4xl md:text-6xl font-bold">Contact Us</h1>
             <p className="mt-4 text-lg md:text-xl text-primary-foreground/80">
-              We'd love to hear from you. Get in touch with us for admissions, queries, or feedback.
+              We&apos;d love to hear from you. Get in touch with us for admissions, queries, or feedback.
             </p>
           </div>
         </section>

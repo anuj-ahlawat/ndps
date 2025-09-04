@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, UserCheck, MessageSquare, Calendar } from "lucide-react";
-
 const admissionProcess = [
   {
     step: 1,

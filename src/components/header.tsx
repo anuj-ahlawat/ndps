@@ -99,8 +99,8 @@ export function Header() {
                     </a>
                   </div>
                   <div className="text-xs bg-primary-foreground/10 p-2 rounded-md">
-                    <p><strong>Affiliation No:</strong> 132310001</p>
-                    <p><strong>School Code:</strong> 132310001</p>
+                    <p><strong>Affiliation No:</strong> 13231001</p>
+                    <p><strong>School Code:</strong> 13231001</p>
                   </div>
               </div>
           </div>
@@ -123,18 +123,17 @@ export function Header() {
                   <DropdownMenuContent onMouseLeave={() => setOpenMenu(null)}>
                     {link.sublinks.map((sublink) => (
                       <DropdownMenuItem key={sublink.href} asChild>
-                        <Link href={sublink.href}>{sublink.label}</Link>
+                        <Link key={`dropdown-${sublink.href}`} href={sublink.href}>{sublink.label}</Link>
                       </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
-                <Button asChild variant="ghost" className={cn(
+                <Button key={`desktop-button-${link.href}`} asChild variant="ghost" className={cn(
                     "hover:bg-primary/10 px-4",
                      pathname === link.href ? 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground' : ''
                      )}>
                     <Link
-                      key={link.href}
                       href={link.href!}
                     >
                       {link.label}
@@ -169,7 +168,7 @@ export function Header() {
                     <Accordion type="single" collapsible className="w-full">
                     {navLinks.map((link, index) => (
                        link.sublinks ? (
-                        <AccordionItem value={`item-${index}`} key={link.label} className="border-b">
+                        <AccordionItem value={`item-${index}`} key={`mobile-${link.label}`} className="border-b">
                           <AccordionTrigger className="hover:no-underline text-lg font-medium py-3">
                             {link.label}
                           </AccordionTrigger>
@@ -193,7 +192,7 @@ export function Header() {
                         </AccordionItem>
                        ) : (
                         <Link
-                          key={link.href}
+                          key={`mobile-link-${link.href}`}
                           href={link.href!}
                           className={cn(
                             "text-lg font-medium rounded-md px-3 py-3 flex items-center border-b",

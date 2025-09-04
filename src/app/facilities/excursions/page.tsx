@@ -1,8 +1,8 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Map, Landmark, Museum } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Map, Landmark, Building2 } from "lucide-react";
 
 export default function ExcursionsPage() {
   return (
@@ -48,7 +48,7 @@ export default function ExcursionsPage() {
                         <p className="text-muted-foreground mt-2">Visits to forts, palaces, and monuments to learn about our rich heritage.</p>
                     </Card>
                      <Card className="p-6">
-                        <Museum className="h-10 w-10 text-accent mx-auto mb-4"/>
+                        <Building2 className="h-10 w-10 text-accent mx-auto mb-4"/>
                         <h3 className="font-headline text-xl font-bold">Museums & Galleries</h3>
                         <p className="text-muted-foreground mt-2">Exploring art, science, and history museums to spark curiosity.</p>
                     </Card>

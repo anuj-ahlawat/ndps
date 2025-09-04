@@ -35,7 +35,7 @@ export default function AnnualCalendarPage() {
                 <h2 className="font-headline text-2xl font-bold text-primary mb-4">Upcoming Events</h2>
                 <ul className="list-disc list-inside space-y-2">
                     <li><span className="font-semibold">August 15, 2024:</span> Independence Day Celebration</li>
-                    <li><span className="font-semibold">September 5, 2024:</span> Teacher's Day</li>
+                    <li><span className="font-semibold">September 5, 2024:</span> Teacher&apos;s Day</li>
                     <li><span className="font-semibold">October 2, 2024:</span> Gandhi Jayanti (Holiday)</li>
                 </ul>
              </div>

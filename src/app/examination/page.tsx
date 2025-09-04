@@ -64,7 +64,7 @@ export default function ExaminationPage() {
              <div className="mt-12 space-y-6 text-muted-foreground">
                 <h3 className="font-headline text-2xl font-bold text-primary">Assessment Policy</h3>
                 <p>Our assessment policy is designed to be comprehensive, continuous, and stress-free. We follow a system of periodic tests and term examinations to evaluate student learning. The focus is not just on summative assessment but also on formative assessment, which includes class participation, projects, assignments, and practical work.</p>
-                <p>Promotion to the next class is based on the student's overall performance throughout the academic year, as per the guidelines laid down by the CBSE.</p>
+                <p>Promotion to the next class is based on the student&apos;s overall performance throughout the academic year, as per the guidelines laid down by the CBSE.</p>
              </div>
           </div>
         </section>

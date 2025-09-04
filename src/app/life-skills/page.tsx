@@ -1,8 +1,7 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Lightbulb, Users, HandHeart, MessageCircle } from "lucide-react";
-import Image from "next/image";
 
 const lifeSkills = [
   {

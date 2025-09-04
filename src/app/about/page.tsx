@@ -35,7 +35,7 @@ export default function AboutPage() {
             <div>
               <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">Our History & Mission</h2>
               <p className="mb-4 text-muted-foreground">
-                Founded on the principles of academic excellence and holistic development, New Delhi Public School has been a beacon of quality education for over two decades. Our mission is to empower students to achieve their full potential and become responsible global citizens.
+                Founded on the principles of academic excellence , New Delhi Public School has been a beacon of quality education for over two decades. Our mission is to empower students to achieve their full potential and become responsible global citizens.
               </p>
               <p className="text-muted-foreground">
                 We believe in a balanced approach to education, combining rigorous academic programs with a rich tapestry of extracurricular activities. Our values of integrity, respect, and resilience are woven into every aspect of school life.

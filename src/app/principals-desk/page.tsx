@@ -9,7 +9,7 @@ export default function PrincipalsDeskPage() {
       <main className="flex-1">
         <section className="py-16 md:py-24 bg-primary text-primary-foreground">
           <div className="container max-w-4xl mx-auto text-center">
-            <h1 className="font-headline text-4xl md:text-6xl font-bold">From the Principal's Desk</h1>
+            <h1 className="font-headline text-4xl md:text-6xl font-bold">From the Principal&apos;s Desk</h1>
           </div>
         </section>
 
@@ -44,10 +44,10 @@ export default function PrincipalsDeskPage() {
                     The safety and well-being of our students are our utmost priorities. We have a robust framework in place to ensure a secure and welcoming campus for everyone. Our dedicated team of counselors and support staff are always available to assist students with their academic and personal challenges.
                 </p>
                 <p>
-                    I am incredibly proud of our students' achievements, both in and out of the classroom, and the unwavering commitment of our staff. I invite you to explore our website to learn more about our programs and the wonderful opportunities available at NDPS.
+                    I am incredibly proud of our students&apos; achievements, both in and out of the classroom, and the unwavering commitment of our staff. I invite you to explore our website to learn more about our programs and the wonderful opportunities available at NDPS.
                 </p>
                 <p>
-                    We look forward to partnering with you in your child's educational journey.
+                    We look forward to partnering with you in your child&apos;s educational journey.
                 </p>
             </div>
           </div>
