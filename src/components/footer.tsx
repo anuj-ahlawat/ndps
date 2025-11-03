@@ -43,8 +43,8 @@ export function Footer() {
           <div>
              <h3 className="font-headline text-lg font-semibold mb-4">Affiliation</h3>
              <div className="text-sm text-slate-300 space-y-1">
-                <p><strong>Affiliation No:</strong> 13231001</p>
-                <p><strong>School Code:</strong> 13231001</p>
+                <p><strong>Affiliation No:</strong> 1030601</p>
+                <p><strong>School Code:</strong> 50570</p>
              </div>
           </div>
         </div>

@@ -11,19 +11,17 @@ import {
 } from "@/components/ui/table"
 
 const smcMembers = [
-  { sNo: 1, name: "Mr. Rajesh Sharma", designation: "Chairman" },
-  { sNo: 2, name: "Dr. Evelyn Reed", designation: "Principal / Member Secretary" },
-  { sNo: 3, name: "Mr. Samuel Chen", designation: "Vice-Principal / Member" },
-  { sNo: 4, name: "Mrs. Kavita Joshi", designation: "Teacher Representative" },
-  { sNo: 5, name: "Mr. Mohan Kumar", designation: "Teacher Representative" },
-  { sNo: 6, name: "Ms. Anita Desai", designation: "Parent Representative" },
-  { sNo: 7, name: "Mr. Prakash Verma", designation: "Parent Representative" },
-  { sNo: 8, name: "Mrs. Geeta Iyer", designation: "Parent Representative" },
-  { sNo: 9, name: "Mr. Alok Jain", designation: "Parent Representative" },
-  { sNo: 10, name: "Dr. R. K. Singhania", designation: "Educationist" },
-  { sNo: 11, name: "Mrs. Meera Pandit", designation: "Educationist" },
-  { sNo: 12, name: "Accountant of the School", designation: "Member" },
-  { sNo: 13, name: "Social Worker", designation: "Member" },
+  { sNo: 1, name: "Mr. PRADEEP DAGAR", designation: "PRESIDENT, DIRECTOR NEW DELHI PUBLIC SCHOOL" },
+  { sNo: 2, name: "Mr. RAMVIR SINGH", designation: "SECRETARY, PRINCIPAL NEW DELHI PUBLIC SCHOOL" },
+  { sNo: 3, name: "Mr. GOPAL AGGARWAL", designation: "PARENT REPRESENTATIVE NEW DELHI PUBLIC SCHOOL" },
+  { sNo: 4, name: "Mr. HARENDRA S TOMAR", designation: "PARENT REPRESENTATIVE NEW DELHI PUBLIC SCHOOL" },
+  { sNo: 5, name: "Mr. MUJAHID ZAFRI", designation: "TEACHER REPRESENTATIVE NEW DELHI PUBLIC SCHOOL" },
+  { sNo: 6, name: "Mr. RAVI SINGH", designation: "TEACHER REPRESENTATIVE NEW DELHI PUBLIC SCHOOL" },
+  { sNo: 7, name: "Mr. ARIHANT DIWAN", designation: "TEACHER REPRESENTATIVE NEW DELHI PUBLIC SCHOOL" },
+  { sNo: 8, name: "Mr. VEER BHAN SINGH CHAUHAN", designation: "PRINCIPAL, TSS INTERNATIONAL SCHOOL" },
+  { sNo: 9, name: "Mr. DENNIS AUGUSTINE", designation: "PRINCIPAL, NEIIL WORLD SCHOOL" },
+  { sNo: 10, name: "Mrs ARCHANA AGGARWAL", designation: "PRINCIPAL MDS SENIOR SECONDARY SCHOOL" },
+  { sNo: 11, name: "Dr. R.K SINGH", designation: "HEALTH ADVISOR" },
 ];
 
 export default function SmcBodyPage() {

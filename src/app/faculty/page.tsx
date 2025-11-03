@@ -1,7 +1,15 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
 
 const facultyMembers = [
   { name: 'Dr. Evelyn Reed', role: 'Principal, Ph.D. in Education', image: 'https://placehold.co/400x400.png', hint: 'woman portrait professional' },
@@ -12,6 +20,16 @@ const facultyMembers = [
   { name: 'Mr. Arjun Das', role: 'Head Coach, Sports', image: 'https://placehold.co/400x400.png', hint: 'sports coach' },
   { name: 'Ms. Clara Pinto', role: 'Arts Department Head', image: 'https://placehold.co/400x400.png', hint: 'artist portrait' },
   { name: 'Mr. Kenji Tanaka', role: 'Music Director', image: 'https://placehold.co/400x400.png', hint: 'musician portrait' },
+];
+const facultyDetails = [
+    { sNo: 1, information: "PRINCIPAL", details: "Ms. Neha Iqbal" },
+    { sNo: 2, information: "TOTAL NO. OF TEACHERS", details: "" },
+    { sNo: null, information: "PGT", details: "" },
+    { sNo: null, information: "TGT", details: "" },
+    { sNo: null, information: "PRT", details: "" },
+    { sNo: 3, information: "TEACHERS SECTION RATIO", details: "" },
+    { sNo: 4, information: "DETAILS OF SPECIAL EDUCATOR", details: "Prarthana sharma" },
+    { sNo: 5, information: "DETAILS OF COUNSELLOR AND WELNESS TEACHER", details: "Prarthana sharma" },
 ];
 
 export default function FacultyPage() {
@@ -42,6 +60,33 @@ export default function FacultyPage() {
                   </div>
                 </Card>
               ))}
+            </div>
+            <div className="mt-16">
+                 <Card className="overflow-hidden">
+                    <CardHeader>
+                        <CardTitle>Faculty Details</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead className="w-[100px]">S.No.</TableHead>
+                                    <TableHead>INFORMATION</TableHead>
+                                    <TableHead>DETAILS</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {facultyDetails.map((item, index) => (
+                                    <TableRow key={index}>
+                                        <TableCell className="font-medium">{item.sNo}</TableCell>
+                                        <TableCell>{item.information}</TableCell>
+                                        <TableCell>{item.details}</TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                 </Card>
             </div>
           </div>
         </section>

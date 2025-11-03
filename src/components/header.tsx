@@ -66,6 +66,8 @@ const navLinks = [
     ]
   },
   { href: "/school-safety-committee", label: "School Safety Committee" },
+  { href: "/mandatory-disclosure", label: "Mandatory Disclosure" },
+  {href: "/transfer-certificate", label: "Transfer-Certificate"},
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact-Us" },
 ];
@@ -99,8 +101,8 @@ export function Header() {
                     </a>
                   </div>
                   <div className="text-xs bg-primary-foreground/10 p-2 rounded-md">
-                    <p><strong>Affiliation No:</strong> 13231001</p>
-                    <p><strong>School Code:</strong> 13231001</p>
+                    <p><strong>Affiliation No:</strong> 1030601</p>
+                    <p><strong>School Code:</strong> 50570</p>
                   </div>
               </div>
           </div>

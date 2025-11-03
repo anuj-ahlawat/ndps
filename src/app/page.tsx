@@ -59,7 +59,7 @@ export default function Home() {
         <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <Image
-            src="https://placehold.co/1920x1080.png"
+            src="/images/school_main.jpg"
             alt="New Delhi Public School Campus"
             data-ai-hint="school building"
             fill
