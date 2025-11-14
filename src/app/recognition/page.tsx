@@ -22,7 +22,7 @@ export default function RecognitionPage() {
           <div className="container max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
                <Image
-                 src="https://placehold.co/600x450.png"
+                 src="/images/school_main.jpg"
                  alt="CBSE Logo"
                  data-ai-hint="certificate document"
                  fill

@@ -9,14 +9,14 @@ const activities = [
     title: "Art & Craft",
     description: "Students explore various mediums to express their creativity, from painting and sketching to pottery and sculpture.",
     icon: <Palette className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/800x600.png",
+    image: "/picture/image4.jpeg",
     hint: "art class students",
   },
   {
     title: "Music & Dance",
     description: "We offer training in both vocal and instrumental music, as well as various forms of classical and contemporary dance.",
     icon: <Music className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/800x600.png",
+    image: "/picture/image2.jpeg",
     hint: "school music class",
   },
   {
@@ -30,7 +30,7 @@ const activities = [
     title: "Clubs & Societies",
     description: "From Debate and MUN to Science and Robotics clubs, students can pursue their interests and develop leadership skills.",
     icon: <BrainCircuit className="h-10 w-10 text-primary" />,
-    image: "https://placehold.co/800x600.png",
+    image: "/picture/image6.jpeg",
     hint: "students debate club",
   },
 ];
