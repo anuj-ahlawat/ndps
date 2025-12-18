@@ -37,7 +37,23 @@ export function Footer() {
             <address className="space-y-2 text-sm text-slate-300 not-italic">
               <p className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-1 shrink-0"/><span>Jarah Road, Bandha, Morena, Po Hetampur, Madhya Pradesh, Morena, Madhya Pradesh 476001</span></p>
               <p className="flex items-center gap-2"><Mail className="h-4 w-4 shrink-0"/><a href="mailto:ndpsmorena@gmail.com" className="hover:text-accent transition-colors">ndpsmorena@gmail.com</a></p>
-              <p className="flex items-center gap-2"><Phone className="h-4 w-4 shrink-0"/><a href="tel:+99979879688" className="hover:text-accent transition-colors">(+91) 9997987968</a></p>
+              <p className="flex items-center gap-2">
+  <Phone className="h-4 w-4 shrink-0" />
+  <a
+    href="tel:+917773028578"
+    className="hover:text-accent transition-colors"
+  >
+    +91 77730 28578
+  </a>
+  <span>|</span>
+  <a
+    href="tel:+917223815082"
+    className="hover:text-accent transition-colors"
+  >
+    +91 72238 15082
+  </a>
+</p>
+
             </address>
           </div>
           <div>
