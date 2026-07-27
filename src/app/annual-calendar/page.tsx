@@ -68,17 +68,19 @@ export default function AnnualCalendarPage() {
   }, []);
 
   const upcomingEvents = useMemo(() => {
-    return events
-      .filter((event: Event) => {
-        const d = new Date(event.date || event.startDate!);
-        return d >= today;
-      })
-      .sort(
-        (a: Event, b: Event) =>
-          new Date(a.date || a.startDate!).getTime() -
-          new Date(b.date || b.startDate!).getTime()
-      );
-  }, []);
+  return events
+    .filter((event: Event) => {
+      const eventDate = new Date(event.date || event.startDate!);
+      eventDate.setHours(0, 0, 0, 0);
+      return eventDate >= today;
+    })
+    .sort(
+      (a: Event, b: Event) =>
+        new Date(a.date || a.startDate!).getTime() -
+        new Date(b.date || b.startDate!).getTime()
+    )
+    .slice(0, 3); // Show only the next 3 upcoming events
+}, []);
 
   const selectedEvents = useMemo(() => {
     if (!selectedDate) return [];
@@ -116,12 +118,12 @@ export default function AnnualCalendarPage() {
             </h1>
 
             <p className="mt-4 text-lg opacity-90">
-              Academic Session 2026–27
+              Academic Session 2026-27
             </p>
 
             <Button asChild className="mt-8" variant="secondary">
               <Link
-                href="/academic-calendar-2026-27.pdf"
+                href="/schoolFiles/academic-calendar-2026-27.pdf"
                 target="_blank"
               >
                 <Download className="mr-2 h-4 w-4" />
