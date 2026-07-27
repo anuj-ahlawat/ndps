@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "title": "Session Begins",
+    "date": "2026-04-01",
+    "type": "session",
+    "description": "Academic session starts"
+  },
+  {
+    "id": 2,
+    "title": "Dr. B.R. Ambedkar Jayanti",
+    "date": "2026-04-14",
+    "type": "holiday",
+    "description": "Holiday"
+  },
+  {
+    "id": 3,
+    "title": "Unit Test 1",
+    "date": "2026-04-29",
+    "type": "exam",
+    "description": "Unit Test - 1"
+  },
+  {
+    "id": 4,
+    "title": "Summer Vacation",
+    "startDate": "2026-05-15",
+    "endDate": "2026-06-22",
+    "type": "vacation",
+    "description": "Summer Vacation"
+  },
+  {
+    "id": 5,
+    "title": "School Reopens",
+    "date": "2026-06-23",
+    "type": "session",
+    "description": "School reopens after summer vacation"
+  },
+  {
+    "id": 6,
+    "title": "Inter-class Poetry Competition",
+    "date": "2026-08-06",
+    "type": "competition",
+    "description": "Grades II-V"
+  },
+  {
+    "id": 7,
+    "title": "Independence Day Celebration",
+    "date": "2026-08-15",
+    "type": "event",
+    "description": "National Celebration"
+  },
+  {
+    "id": 8,
+    "title": "Unit Test 2",
+    "date": "2026-08-17",
+    "type": "exam",
+    "description": "Second Unit Test"
+  },
+  {
+    "id": 9,
+    "title": "Speech Competition",
+    "date": "2026-08-22",
+    "type": "competition",
+    "description": "Classes VI-X"
+  },
+  {
+    "id": 10,
+    "title": "Rakhi Making Competition",
+    "date": "2026-08-27",
+    "type": "competition",
+    "description": "All Classes"
+  },
+  {
+    "id": 11,
+    "title": "Janmashtami Celebration",
+    "date": "2026-09-03",
+    "type": "event",
+    "description": "Nursery-V"
+  },
+  {
+    "id": 12,
+    "title": "Maths Quiz",
+    "date": "2026-09-09",
+    "type": "competition",
+    "description": "Classes IX-XII"
+  },
+  {
+    "id": 13,
+    "title": "Quiz on National Leaders",
+    "date": "2026-09-18",
+    "type": "competition",
+    "description": "Classes V-X"
+  },
+  {
+    "id": 14,
+    "title": "Handwriting Competition",
+    "date": "2026-09-26",
+    "type": "competition",
+    "description": "Classes V-VIII"
+  },
+  {
+    "id": 15,
+    "title": "Gandhi Jayanti",
+    "date": "2026-10-02",
+    "type": "holiday",
+    "description": "National Holiday"
+  },
+  {
+    "id": 16,
+    "title": "Mid Term Examination",
+    "startDate": "2026-10-05",
+    "endDate": "2026-10-16",
+    "type": "exam",
+    "description": "Mid-term Exams"
+  },
+  {
+    "id": 17,
+    "title": "Dussehra Holidays",
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-20",
+    "type": "holiday",
+    "description": "Festival Holidays"
+  },
+  {
+    "id": 18,
+    "title": "Sports Week",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-07",
+    "type": "event",
+    "description": "Annual Sports Week"
+  },
+  {
+    "id": 19,
+    "title": "Diwali Holidays",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-11",
+    "type": "holiday",
+    "description": "Festival Holidays"
+  },
+  {
+    "id": 20,
+    "title": "Unit Test 3",
+    "date": "2026-11-21",
+    "type": "exam",
+    "description": "Third Unit Test"
+  },
+  {
+    "id": 21,
+    "title": "Pre-board Examination I",
+    "date": "2026-12-01",
+    "type": "exam",
+    "description": "Classes X & XII"
+  },
+  {
+    "id": 22,
+    "title": "Winter Vacation",
+    "startDate": "2026-12-25",
+    "endDate": "2027-01-03",
+    "type": "vacation",
+    "description": "Winter Vacation"
+  },
+  {
+    "id": 23,
+    "title": "Pre-board Examination II",
+    "date": "2027-01-09",
+    "type": "exam",
+    "description": "Classes X & XII"
+  },
+  {
+    "id": 24,
+    "title": "Republic Day",
+    "date": "2027-01-26",
+    "type": "event",
+    "description": "National Celebration"
+  },
+  {
+    "id": 25,
+    "title": "Unit Test 4",
+    "date": "2027-01-28",
+    "type": "exam",
+    "description": "Fourth Unit Test"
+  },
+  {
+    "id": 26,
+    "title": "Annual Examination",
+    "startDate": "2027-03-03",
+    "endDate": "2027-03-15",
+    "type": "exam",
+    "description": "Annual Exams"
+  },
+  {
+    "id": 27,
+    "title": "Final Result",
+    "date": "2027-03-25",
+    "type": "result",
+    "description": "Result Declaration"
+  },
+  {
+    "id": 28,
+    "title": "Next Session Begins",
+    "date": "2027-04-01",
+    "type": "session",
+    "description": "Academic Session 2027-28"
+  }
+]

@@ -22,7 +22,7 @@ const documents = [
     { sNo: 7, information: "COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION OR SELF CERTIFICATION BY SCHOOL", details: "/schoolFiles/deo recognition.pdf" },
     { sNo: 8, information: "COPIES OF VALID WATER SAFETY CERTIFICATES", details: "/schoolFiles/water safety new.pdf" },
     { sNo: 9, information: "COPY OF VALID LAND CERTIFICATE", details: "/schoolFiles/land certificate.pdf" },
-    { sNo: 10, information: "COPY OF VALID HEALTH CERTIFICATE", details: "/schoolFiles/health-certificate-new.pdf" },
+    { sNo: 10, information: "COPY OF VALID HEALTH CERTIFICATE", details: "/schoolFiles/heath-certificate-new.pdf" },
     { sNo: 11, information: "COPY OF INSURANCE COVERAGE CONFIRMATION", details: "/schoolFiles/coverage confirmation.pdf" },
     { sNo: 12, information: "COPY OF EPF DETAILS (MAY 2021)", details: "/schoolFiles/epf may 2021.pdf" },
     { sNo: 13, information: "COPY OF PARENTS TEACHER ASSOCIATION DOCUMENT", details: "/schoolFiles/parents teacher ass. .pdf" },

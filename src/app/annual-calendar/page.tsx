@@ -1,47 +1,316 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import Link from "next/link";
+
+import events from "@/data/event.json";
+
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Calendar } from "@/components/ui/calendar";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Download } from "lucide-react";
+
+type Event = {
+  id: number;
+  title: string;
+  type: string;
+  description: string;
+  date?: string;
+  startDate?: string;
+  endDate?: string;
+};
+
+const badgeColors: Record<string, string> = {
+  holiday: "bg-red-500",
+  exam: "bg-orange-500",
+  competition: "bg-blue-500",
+  vacation: "bg-purple-500",
+  session: "bg-green-500",
+  event: "bg-sky-500",
+  result: "bg-emerald-500",
+};
 
 export default function AnnualCalendarPage() {
+  const [selectedDate, setSelectedDate] = useState<Date>();
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const eventDates = useMemo(() => {
+    const dates: Date[] = [];
+
+    events.forEach((event: Event) => {
+      if (event.date) {
+        dates.push(new Date(event.date));
+      }
+
+      if (event.startDate && event.endDate) {
+        const current = new Date(event.startDate);
+        const end = new Date(event.endDate);
+
+        while (current <= end) {
+          dates.push(new Date(current));
+          current.setDate(current.getDate() + 1);
+        }
+      }
+    });
+
+    return dates;
+  }, []);
+
+  const upcomingEvents = useMemo(() => {
+    return events
+      .filter((event: Event) => {
+        const d = new Date(event.date || event.startDate!);
+        return d >= today;
+      })
+      .sort(
+        (a: Event, b: Event) =>
+          new Date(a.date || a.startDate!).getTime() -
+          new Date(b.date || b.startDate!).getTime()
+      );
+  }, []);
+
+  const selectedEvents = useMemo(() => {
+    if (!selectedDate) return [];
+
+    return events.filter((event: Event) => {
+      if (event.date) {
+        return (
+          new Date(event.date).toDateString() ===
+          selectedDate.toDateString()
+        );
+      }
+
+      if (event.startDate && event.endDate) {
+        const start = new Date(event.startDate);
+        const end = new Date(event.endDate);
+
+        return selectedDate >= start && selectedDate <= end;
+      }
+
+      return false;
+    });
+  }, [selectedDate]);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+
       <main className="flex-1">
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-          <div className="container max-w-4xl mx-auto text-center">
-            <h1 className="font-headline text-4xl md:text-6xl font-bold">Annual Academic Calendar</h1>
-            <p className="mt-4 text-lg md:text-xl text-primary-foreground/80">
-              Key dates and events for the academic year.
+
+        <section className="bg-primary text-primary-foreground py-16">
+          <div className="container max-w-5xl mx-auto text-center">
+
+            <h1 className="text-5xl font-bold">
+              Annual Academic Calendar
+            </h1>
+
+            <p className="mt-4 text-lg opacity-90">
+              Academic Session 2026–27
             </p>
+
+            <Button asChild className="mt-8" variant="secondary">
+              <Link
+                href="/academic-calendar-2026-27.pdf"
+                target="_blank"
+              >
+                <Download className="mr-2 h-4 w-4" />
+                Download Academic Calendar
+              </Link>
+            </Button>
+
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
-          <div className="container max-w-4xl mx-auto flex flex-col items-center">
-             <Card className="shadow-lg">
+        <section className="py-14">
+
+          <div className="container max-w-7xl mx-auto grid gap-8 lg:grid-cols-[430px_1fr]">
+
+            <Card>
+              <CardHeader>
+                <CardTitle>School Calendar</CardTitle>
+                <CardDescription>
+                  Click a date to view events.
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent>
+
+                <Calendar
+                  mode="single"
+                  selected={selectedDate}
+                  onSelect={setSelectedDate}
+                  className="rounded-md border"
+                  modifiers={{
+                    events: eventDates,
+                  }}
+                  modifiersClassNames={{
+                    events:
+                      "bg-primary text-primary-foreground rounded-full font-bold",
+                  }}
+                />
+
+              </CardContent>
+            </Card>
+
+            <div className="space-y-6">
+
+              <Card>
+
                 <CardHeader>
-                    <CardTitle>School Calendar</CardTitle>
-                    <CardDescription>Select a date to view events.</CardDescription>
+                  <CardTitle>
+                    Upcoming Events
+                  </CardTitle>
+
+                  <CardDescription>
+                    Academic activities and holidays.
+                  </CardDescription>
+
                 </CardHeader>
-                <CardContent className="flex justify-center">
-                    <Calendar
-                        mode="single"
-                        className="rounded-md border"
-                    />
+
+                <CardContent>
+
+                  <div className="space-y-4">
+
+                    {upcomingEvents.map((event: Event) => (
+
+                      <div
+                        key={event.id}
+                        className="border rounded-xl p-4 hover:shadow transition"
+                      >
+
+                        <div className="flex justify-between items-center">
+
+                          <h3 className="font-semibold text-lg">
+                            {event.title}
+                          </h3>
+
+                          <Badge
+                            className={
+                              badgeColors[event.type] ??
+                              "bg-gray-500"
+                            }
+                          >
+                            {event.type}
+                          </Badge>
+
+                        </div>
+
+                        <p className="text-sm text-muted-foreground mt-2">
+
+                          {event.date
+                            ? new Date(event.date).toLocaleDateString(
+                                "en-IN",
+                                {
+                                  day: "numeric",
+                                  month: "long",
+                                  year: "numeric",
+                                }
+                              )
+                            : `${new Date(
+                                event.startDate!
+                              ).toLocaleDateString("en-IN")} - ${new Date(
+                                event.endDate!
+                              ).toLocaleDateString("en-IN")}`}
+
+                        </p>
+
+                        <p className="mt-2">
+                          {event.description}
+                        </p>
+
+                      </div>
+
+                    ))}
+
+                  </div>
+
                 </CardContent>
-             </Card>
-             <div className="mt-8 text-muted-foreground self-start">
-                <h2 className="font-headline text-2xl font-bold text-primary mb-4">Upcoming Events</h2>
-                <ul className="list-disc list-inside space-y-2">
-                    <li><span className="font-semibold">August 15, 2024:</span> Independence Day Celebration</li>
-                    <li><span className="font-semibold">September 5, 2024:</span> Teacher&apos;s Day</li>
-                    <li><span className="font-semibold">October 2, 2024:</span> Gandhi Jayanti (Holiday)</li>
-                </ul>
-             </div>
+
+              </Card>
+
+              <Card>
+
+                <CardHeader>
+
+                  <CardTitle>
+                    Events on Selected Date
+                  </CardTitle>
+
+                </CardHeader>
+
+                <CardContent>
+
+                  {!selectedDate && (
+                    <p className="text-muted-foreground">
+                      Select a date from the calendar.
+                    </p>
+                  )}
+
+                  {selectedDate &&
+                    selectedEvents.length === 0 && (
+                      <p className="text-muted-foreground">
+                        No events scheduled.
+                      </p>
+                    )}
+
+                  <div className="space-y-3">
+
+                    {selectedEvents.map((event: Event) => (
+
+                      <div
+                        key={event.id}
+                        className="border rounded-lg p-4"
+                      >
+
+                        <div className="flex justify-between">
+
+                          <h4 className="font-semibold">
+                            {event.title}
+                          </h4>
+
+                          <Badge
+                            className={
+                              badgeColors[event.type]
+                            }
+                          >
+                            {event.type}
+                          </Badge>
+
+                        </div>
+
+                        <p className="text-sm text-muted-foreground mt-2">
+                          {event.description}
+                        </p>
+
+                      </div>
+
+                    ))}
+
+                  </div>
+
+                </CardContent>
+
+              </Card>
+
+            </div>
+
           </div>
+
         </section>
+
       </main>
+
       <Footer />
     </div>
   );
