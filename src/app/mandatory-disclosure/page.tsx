@@ -27,6 +27,7 @@ const documents = [
     { sNo: 12, information: "COPY OF EPF DETAILS (MAY 2021)", details: "/schoolFiles/epf may 2021.pdf" },
     { sNo: 13, information: "COPY OF PARENTS TEACHER ASSOCIATION DOCUMENT", details: "/schoolFiles/parents teacher ass. .pdf" },
     { sNo: 14, information: "COPY OF ANAPATI CERTIFICATE", details: "/schoolFiles/anapati certificate.pdf" },
+    { sNo: 15, information: "COPY OF RECOGNITION CERTIFICATE", details: "/schoolFiles/RecognitionCertificate.pdf" },
 ];
 
 export default function PublicMandatoryDisclosurePage() {
