@@ -18,7 +18,7 @@ const documents = [
     { sNo: 3, information: "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT", details: "/schoolFiles/NOC.pdf" },
     { sNo: 4, information: "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT'S RENEWAL IF APPLICABLE", details: "/schoolFiles/deo recognition.pdf" },
     { sNo: 5, information: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE", details: "/schoolFiles/building-safety-new.pdf" },
-    { sNo: 6, information: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY", details: "/schoolFiles/fire safety certificate.pdf" },
+    { sNo: 6, information: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY", details: "/schoolFiles/new-fire-noc.pdf" },
     { sNo: 7, information: "COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION OR SELF CERTIFICATION BY SCHOOL", details: "/schoolFiles/deo recognition.pdf" },
     { sNo: 8, information: "COPIES OF VALID WATER SAFETY CERTIFICATES", details: "/schoolFiles/water safety new.pdf" },
     { sNo: 9, information: "COPY OF VALID LAND CERTIFICATE", details: "/schoolFiles/land certificate.pdf" },
